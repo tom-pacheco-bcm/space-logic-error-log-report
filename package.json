@@ -1,0 +1,30 @@
+{
+  "name": "space-logic-error-log-report",
+  "version": "1.0.0",
+  "description": "SpaceLogic Error Log Report",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "uglify": "uglifyjs ./build/app.js -m -c -o ./build/app.min.js",
+    "uglify23": "uglifyjs --verbose ./build/app.js -m -c -o ./build/app.min.js",
+    "build:t": "tsc && npm run uglify",
+    "build": "rollup -c && npm run uglify && npm run tgml",
+    "tgml": "tsc --p ./scripts && node scripts/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tom pacheco",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@types/node": "^20.11.17",
+    "jszip": "^3.10.1",
+    "uglify-js": "^3.5.7"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.10.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  }
+}

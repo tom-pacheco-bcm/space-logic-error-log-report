@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "outDir": "./build/js",
+        "target": "ESNext",
+        "importHelpers": false,
+        "moduleResolution": "node",
+        "lib": [
+            "ESNext",
+            "DOM"
+        ],
+        "sourceMap": false,
+        "allowJs": true,
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        "esModuleInterop": true,
+    },
+    "include": [
+        "./src/**/*",
+        "types/*"
+    ],
+    "exclude": []
+}

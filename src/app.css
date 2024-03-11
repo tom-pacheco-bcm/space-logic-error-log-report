@@ -1,0 +1,97 @@
+body {
+  font-family: sans-serif;
+  background-color: lightgray;
+  margin: 0;
+}
+
+table {
+  padding: 1rem 2rem;
+  border-collapse: collapse;
+  border: 2px solid steelblue;
+  background-color: ghostwhite;
+  width: 100%;
+}
+
+caption {
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 1rem;
+}
+
+thead th,
+thead td {
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 2px solid grey;
+  padding: 15px 15px;
+}
+
+tbody {
+  th {
+    font-weight: 600;
+  }
+
+  th,
+  td {
+    text-align: left;
+    border-bottom: 1px solid silver;
+    padding: 5px 15px;
+  }
+}
+
+.number {
+  text-align: right;
+}
+
+tbody:last-child {
+  border-bottom: 0px;
+}
+
+button {
+  background-color: #42B4E6;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #52C4F6;
+}
+
+button:active {
+  background-color: #2294C6;
+}
+
+.report {
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  align-items: center;
+  margin: 1rem;
+}
+
+.controls {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header {
+  display: flex;
+  background-color: #006a4b;
+  color: white;
+  padding: 1rem;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
+  margin: 1rem;
+  padding: 1rem;
+}
