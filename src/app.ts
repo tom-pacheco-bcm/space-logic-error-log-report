@@ -1,3 +1,4 @@
+import { CreateDataStore } from "./dataStore";
 import { TablePage } from "./pages/tablePage";
 
 export default function App() {
@@ -6,7 +7,9 @@ export default function App() {
       console.error('client is not defined')
       return
     }
-    TablePage()
+
+    const dataStore = CreateDataStore()
+    TablePage(dataStore)
   });
 }
 

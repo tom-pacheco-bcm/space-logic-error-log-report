@@ -1,18 +1,14 @@
-import { CreateDataStore } from "../dataStore";
 import { CreateButton } from "../components/button";
 import { ProgressBar } from "../components/progressBar";
 import { CreateTable } from "../components/table";
 
-export const TablePage = function (): Page {
-
-  const dataStore = CreateDataStore()
+export const TablePage = function (dataStore: DataStore): Page {
 
   const progressBar = ProgressBar({
     el: document.getElementById("progress"),
   });
 
   const refreshTable = () => {
-    progressBar.reset();
     dataStore.load();
   };
 

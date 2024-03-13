@@ -65,3 +65,12 @@ declare interface Action {
 
 
 type Reducer<S> = (s: S, a: Action) => S
+
+
+
+
+declare interface DataStore {
+  subscribe(observer: Observer<State>): () => void
+  load()
+}
+

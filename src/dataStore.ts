@@ -349,7 +349,7 @@ function reducer(state: State, action: ReducerActions) {
   return state
 }
 
-export function CreateDataStore() {
+export function CreateDataStore(): DataStore {
 
   const initialState: State = {
     Paths: [],

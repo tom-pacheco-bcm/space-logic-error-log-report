@@ -1,6 +1,5 @@
 
 declare interface ProgressBar {
-  reset: () => void,
   update: (value: number, max: number) => void,
 }
 
@@ -49,7 +48,6 @@ export function ProgressBar(props: ProgressBarProps): ProgressBar {
   redraw()
 
   return {
-    reset: reset,
     update: update,
   };
 };
