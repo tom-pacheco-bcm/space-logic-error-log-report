@@ -80,14 +80,14 @@ async function getChildren(path: string): Promise<ChildInfo[]> {
 
   let cs = await client.getChildren(path, false)
 
-  cs.forEach(async c => {
+  for (let c of cs) {
     if (c.typeName === "system.base.Folder") {
       const x = await getChildren(c.path)
       children = children.concat(x)
     } else {
       children.push(c)
     }
-  })
+  }
 
   children.sort((a, b) => a.path.localeCompare(b.path))
 
