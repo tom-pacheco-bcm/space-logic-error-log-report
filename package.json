@@ -1,6 +1,6 @@
 {
   "name": "space-logic-error-log-report",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SpaceLogic Error Log Report",
   "main": "index.js",
   "scripts": {
